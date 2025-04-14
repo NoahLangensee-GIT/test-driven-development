@@ -22,9 +22,9 @@ describe("formating time", () => {
     test("negative numbers throw error", () => {
         expect(() => {
         formatDuration(-5);
-        }).toThrow(new Error("Negative Zahlen können nicht formatiert werden"));
+        }).toThrow(new Error("Negative Numbers cannot be converted"));
     });
-    test("Nachkommastellen werden gerundet", () => {
+    test("rounding numbers to next integer", () => {
         expect(formatDuration(5.4345)).toBe("5s");
     });
 });
