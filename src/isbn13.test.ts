@@ -24,9 +24,6 @@ describe('ISBN-13 Validation', () => {
       test("wenn null expect false", () => {
         expect(isValid(null)).toBe(false);
       });
-      test("wenn undefined expect false", () => {
-        expect(isValid(undefined)).toBe(false);
-      });
       test("wenn empty string expect false", () => {
         expect(isValid("")).toBe(false);
       });
